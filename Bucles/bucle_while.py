@@ -81,6 +81,7 @@ vueltas = int(input("Ingresá cuantas números usara: "))
 contador = 0
 suma = 0
 multiplicacion = 1
+validacion = False
 
 while contador < vueltas:
     numero = int(input("Ingresá un número: "))
@@ -91,6 +92,11 @@ while contador < vueltas:
     else:
         multiplicacion = multiplicacion * numero
         contador += 1 
-
+        validacion = True
+        
+if multiplicacion == 1:
+    multiplicacion = 0
+    
+ 
 print(f"La suma es:{suma}")
 print(f"La multiplicacion es: {multiplicacion}")
