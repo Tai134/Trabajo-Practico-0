@@ -58,25 +58,24 @@ print("El promedio es:", promedio)
 # F) Ingresar tantos números por input como el usuario desee, e informar por consola la
 # suma y el promedio de los números ingresados.
 
-#Para poder corregir y que no rompa el ejercicio F debe estar identado o superpone por la global "VUELTAS"
 
-vueltas = int(input("Ingresá cuantas números usara: "))
+ciclos = int(input("Ingresá cuantas números usara: "))
 contador = 0
 suma = 0
 
-while contador < vueltas:
+
+while contador < ciclos:
     numero = int(input("Ingresá un número: "))
     suma = suma + numero
     contador += 1
 
-promedio = suma / 5
+promedio = suma / ciclos
 
 print("La suma es:", suma)
 print("El promedio es:", promedio)
 
 # G) Ingresar tantos números por input como el usuario desee, e informar por consola la
 # suma de los números positivos, y la multiplicación de los números negativos.
-
 
 vueltas = int(input("Ingresá cuantas números usara: "))
 contador = 0
